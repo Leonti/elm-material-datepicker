@@ -33,19 +33,19 @@ main =
         }
 
 
+initialDate : Date
+initialDate =
+    (dateFromFields 2017 (intToMonth 2) 8 0 0 0 0)
+
+
 init : ( Model, Cmd Msg )
 init =
-    ( { datePickerModel = datePickerModel
-      , date = (dateFromFields 2017 (intToMonth 2) 8 0 0 0 0)
+    ( { datePickerModel = DatePicker.init initialDate "#00bcd4"
+      , date = initialDate
       , mdl = Material.model
       }
     , Cmd.none
     )
-
-
-datePickerModel : DatePicker.Model
-datePickerModel =
-    DatePicker.init (dateFromFields 2017 (intToMonth 2) 8 0 0 0 0) "#00bcd4"
 
 
 view : Model -> Html.Html Msg

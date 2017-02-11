@@ -26,7 +26,7 @@ type alias Model =
     }
 
 
-{-| Pass date picker settings and get initial time picker model
+{-| Get initial time picker model by passing date and a main color (in hex format)
 -}
 init : Date -> String -> Model
 init date mainColor =
@@ -36,7 +36,7 @@ init date mainColor =
     }
 
 
-{-| Returns currentyl selected date
+{-| Returns currently selected date
 -}
 selectedDate : Model -> Date
 selectedDate model =
