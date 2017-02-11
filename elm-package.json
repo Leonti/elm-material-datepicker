@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "Elm material design date picker",
-    "repository": "https://github.com/Leonti/elm-material-date-picker.git",
+    "repository": "https://github.com/Leonti/elm-material-datepicker.git",
     "license": "BSD3",
     "source-directories": [
         "src"
