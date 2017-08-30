@@ -164,7 +164,7 @@ monthDays model =
             weekDay - 1
 
         rightPadding =
-            35 - daysCount - leftPadding
+            (7 - ((daysCount + leftPadding) % 7)) % 7
 
         weeks =
             chunks 7 (List.repeat leftPadding 0 ++ List.range 1 daysCount ++ List.repeat rightPadding 0)
